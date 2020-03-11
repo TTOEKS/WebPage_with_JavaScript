@@ -5,13 +5,9 @@ This project started at 2020.03.09
 
 
 # To DO List
-- [] Make Input your name
-- [] Make Time
+- [x] Make Input your name
+- [x] Make getTime
 - [] Make ToDo List Function 
 - [] Make BackGround
 - [] Make Weather 
 - [] Studying CSS
-
-
-
-[] Studying CSS
