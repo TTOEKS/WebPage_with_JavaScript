@@ -1,6 +1,5 @@
 ### My Java Script Project  
-This project is my first coding with JavaScript  
-This Project is clone of Nomad Coder's Java Script Class  
+This project is my first coding with JavaScript and clone of Nomad Coder's Java Script Class  
 But all code is my own code and This code not use library as possible  
 This project started at 2020.03.09
 
