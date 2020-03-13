@@ -7,7 +7,8 @@ This project started at 2020.03.09 and my first project with javascript
 # To DO List
 - [x] Make Input your name
 - [x] Make Time
-- [ ] Make ToDo List Function 
+- [x] Make ToDo List Function 
+- [x] Fix local storage key creation bug
 - [ ] Make BackGround
 - [ ] Make Weather 
 - [ ] Studying CSS
