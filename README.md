@@ -9,6 +9,7 @@ This project started at 2020.03.09 and my first project with javascript
 - [x] Make Time
 - [x] Make ToDo List Function 
 - [x] Fix local storage key creation bug
+- [ ] Studying CSS
 - [ ] Make BackGround
 - [ ] Make Weather 
-- [ ] Studying CSS
+
