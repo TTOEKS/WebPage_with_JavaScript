@@ -10,6 +10,7 @@ This project started at 2020.03.09 and my first project with javascript
 - [x] Make ToDo List Function 
 - [x] Fix local storage key creation bug
 - [ ] Studying CSS
+- [ ] ToDo List elements remove function
 - [ ] Make BackGround
 - [ ] Make Weather 
 
