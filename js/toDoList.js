@@ -3,7 +3,9 @@ const todoList = document.querySelector('.todolist-ul'),
     todo_textArea = todo_form.querySelector('input'),
     todo_button = todo_form.querySelector('#todo-button');
 
+
 let array_todoList = Array();
+
 
 
 function check_localStorage() {
@@ -61,12 +63,41 @@ function save_array(array_item) {
 function load_array() {
     console.log("load_array function start");
     temp = localStorage.getItem(LS_TODOLIST);
-    if (temp == null) {
+    if (temp == null || temp == "") {
         console.log('LS_TODOLIST is empty');
     } else {
+        console.log(`LSTODOLIST is ${temp}`);
         array_todoList = temp.split(",");
         build_todolist();
     }
+}
+
+// delete list items
+function delete_item() {
+    let deletetext = "";
+    todoList.onclick = function(e) {
+        let target = e.target;
+
+        // Remove list item and update local storage
+        if (target.type == "button") {
+            deletetext = target.parentElement.innerText;
+
+            // Remove list item
+            console.log(`deleteId is ${deletetext}`);
+            todoList.removeChild(target.parentElement);
+
+
+            // update local storage
+            let idx = array_todoList.indexOf(deletetext);
+            // console.log(`idx is ${idx}`);
+            array_todoList.splice(idx, 1);
+            console.log(array_todoList.toString());
+
+            save_array(array_todoList);
+        }
+
+    };
+
 }
 
 // if array_todoList have user input return true
@@ -86,11 +117,14 @@ function check_same_item(input) {
 function build_todolist() {
     const array_length = array_todoList.length;
     let output = ""
+    console.log(`todoList is ${array_todoList}, array length is ${array_length} `);
+
     if (array_length > 0) {
         for (let i = 0; i < array_length; i++) {
-            output += `<li> ${array_todoList[i]} </li>`;
+            output += `<li> ${array_todoList[i]} <input type="button" value="&#xe800"></li>`;
         }
     }
+
 
     todoList.innerHTML = output;
 }
@@ -101,13 +135,15 @@ function init() {
         load_array();
         console.log("check_localStorage return true");
         enter_handle();
+        todo_form.style.display = "unset";
     }
     // Local Storage is empty -> do not display todoList blakc;
     else {
         console.log("check_localStorage return false");
-        document.body.removeChild(todo_form);
 
     }
+    let test = delete_item();
+    console.log(test);
 }
 
 init();

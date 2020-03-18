@@ -1,6 +1,6 @@
 let Clock_data;
 
-const Clock_locate = document.getElementById('Clock');
+const Clock_locate = document.getElementById('clock');
 
 /*
 1시 - a.m. 1시
@@ -41,14 +41,14 @@ function getClock() {
     let hour;
 
     if (real_hour >= 12 && real_hour != 24) {
-        middle = "PM";
+        middle = "p.m";
         if (real_hour == 12) {
             hour = real_hour;
         } else {
             hour = (real_hour % 12);
         }
     } else {
-        middle = "AM";
+        middle = "am";
         if (real_hour == 24) {
             hour = real_hour / 2;
         } else {
@@ -56,7 +56,7 @@ function getClock() {
         }
     }
 
-    const output = middle + " " + hour + " : " + minute;
+    const output = hour + " : " + minute + " " + middle;
     Clock_locate.innerHTML = output;
 
 }

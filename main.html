@@ -4,33 +4,52 @@
 <head>
     <title> Java Script Project</title>
     <meta charset="UTF-8" />
-    <link rel="sytlesheet" , href="style.css" />
+    <link rel="stylesheet" , href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/fontello-embedded.css"> -->
+    <link rel="stylesheet" href="./css/refresh-embedded.css">
+
+
+    </style>
 </head>
 
 <body>
 
+    <div>
 
-    <h1 id="Clock">This will be Clock</h1>
+        <h1 id="clock">Clock Area</h1>
 
-    <form class="userName-form form">
-        <input type="text" placeholder="Write your name" />
-    </form>
+        <!-- username ask form -->
+        <form class="userName-form form">
+            <input type="text" placeholder="Write your name" />
+        </form>
 
-    <h3 class="grettings-h3 greetings"></h3>
+        <!-- display user name -->
+        <h3 class="greetings-h3 greetings"></h3>
 
-    <form class="todo-form">
-        <input type="text" placeholder="Write your jobs!" />
-        <input id="todo-button" type="button" value="save" />
-    </form>
+        <!-- todo list text edit -->
+        <form style="display: none;" class="todo-form">
+            <input id="todo-blank" type="text" placeholder="Write your jobs!" />
+            <!-- <input id="todo-button" type="button" value="save" /> -->
+        </form>
 
-    <ul class="todolist-ul todolists "> </ul>
+        <!-- todo list unordered list -->
+        <ul class="todolist-ul todolists"> </ul>
+
+        <!-- refresh button -->
+        <div class="refresh-form">
+            <input id="id_refresh" type="button" value="&#xe801"> 초기화
+        </div>
 
 
 
 
-    <script src="./js/clockMethod.js"></script>
-    <script src="./js/askName.js"></script>
-    <script src="./js/toDoList.js"></script>
+    </div>
+
+    <script src="./js/clockMethod.js "></script>
+    <script src="./js/askName.js "></script>
+    <script src="./js/toDoList.js "></script>
+    <script src="./js/background_handle.js "></script>
+    <script src="./js/refresh.js"></script>
 </body>
 
 </html>

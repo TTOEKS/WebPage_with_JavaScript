@@ -5,7 +5,7 @@ const LS_USERNAME = "userName",
 
 const userName_form = document.querySelector('.userName-form'),
     textArea = userName_form.querySelector('input'),
-    greetings = document.querySelector('.grettings-h3');
+    greetings = document.querySelector('.greetings-h3');
 
 
 

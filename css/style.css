@@ -1,0 +1,115 @@
+ul {
+    list-style: none;
+    padding-right: 30px;
+}
+
+.bgImages {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    z-index: -1;
+    animation: fadein 0.5s linear;
+}
+
+
+/* fade-in animate */
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    /* background-color: powderblue; */
+    /* display: none; */
+    background-color: black;
+    margin-right: 30%;
+    margin-left: 30%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    color: white;
+    display: hidden;
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+}
+
+li input {
+    /* Todo list item delete */
+    font-family: "refresh";
+    border: none;
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 98%;
+    color: white;
+    background: space;
+    font-size: 1.3rem;
+}
+
+#clock {
+    /* Display clock */
+    font-size: 3.5rem;
+}
+
+.greetings {
+    /* Display user name */
+    font-size: 1.8rem;
+}
+
+ ::placeholder {
+    color: lightgrey;
+}
+
+#todo-blank {
+    /* Write todo list items blankd */
+    border: none;
+    border-bottom: 1px black solid;
+    text-align: center;
+    width: 70%;
+    font-size: 1.3rem;
+    background: space;
+    color: ghostwhite;
+}
+
+li {
+    /* Todo list items */
+    position: relative;
+    /* display: block; */
+    font-size: 1.3rem;
+    width: 87%;
+    margin-top: 10px;
+}
+
+#id_refresh {
+    font-family: "refresh";
+    background: space;
+    font-size: 2rem;
+    border: none;
+    color: white;
+}
+
+.refresh-form {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-size: unset;
+}
+
+.userName-form input {
+    border: none;
+    border-bottom: 1px black solid;
+    text-align: center;
+    width: 70%;
+    font-size: 1.3rem;
+    background: space;
+    color: ghostwhite
+}
