@@ -5,15 +5,18 @@ const file_path = Array();
     -Image files name-
     airport.jpg
     hawaii.jpg
-    plante.jpg
-    seal.jpg
-    winter.jpg
     autumn.jpg
     dog.jpg
     evening.png
-    hintersee.jpg
     landscape.jpg
     landscape_1.jpg
+    landscape_2.jpg
+    landscape_3.jpg
+    milky_wave.jpg
+    ocean.jpg
+    sunset.jpg
+    autumn.jpg
+    silhouette.jpg
     
 */
 
@@ -23,15 +26,17 @@ function load_images() {
 
     file_path.push(`${file_dir}airport.jpg`);
     file_path.push(`${file_dir}hawaii.jpg`);
-    file_path.push(`${file_dir}plante.jpg`);
-    file_path.push(`${file_dir}seal.jpg`);
-    file_path.push(`${file_dir}winter.jpg`);
     file_path.push(`${file_dir}autumn.jpg`);
     file_path.push(`${file_dir}dog.jpg`);
     file_path.push(`${file_dir}evening.png`);
-    file_path.push(`${file_dir}hintersee.jpg`);
     file_path.push(`${file_dir}landscape.jpg`);
     file_path.push(`${file_dir}landscape_1.jpg`);
+    file_path.push(`${file_dir}landscape_2.jpg`);
+    file_path.push(`${file_dir}landscape_3.jpg`);
+    file_path.push(`${file_dir}milky_wave.jpg`);
+    file_path.push(`${file_dir}ocean.jpg`);
+    file_path.push(`${file_dir}sunset.jpg`);
+    file_path.push(`${file_dir}silhouette.jpg`);
 
 
     console.log(file_path.toString());
@@ -39,8 +44,7 @@ function load_images() {
 
 // setting random Image
 function setting_images() {
-    let rand_int = parseInt(Math.random() * 10) % file_path.length;
-    let rand_int_past;
+    let rand_int = parseInt(Math.random() * 100) % file_path.length;
 
     const image = new Image();
     image.src = file_path[rand_int];

@@ -113,3 +113,16 @@ li {
     background: space;
     color: ghostwhite
 }
+
+.weather-form {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    padding-right: 10px;
+}
+
+.weather-form h4 {
+    position: relative;
+    top: 0px;
+    height: 3px;
+}
