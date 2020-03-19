@@ -13,4 +13,4 @@ This project started at 2020.03.09 and my first project with javascript
 - [x] Make background
 - [x] Make weather 
 
-Finish this project on 2020.03.18
+Finish this project on 2020.03.19
